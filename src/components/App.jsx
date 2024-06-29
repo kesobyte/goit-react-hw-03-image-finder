@@ -35,7 +35,6 @@ export class App extends Component {
       // fetch data from API
       const fetchedImages = await getAPI(search, page);
       const { hits, totalHits } = fetchedImages;
-      console.log(hits, totalHits);
 
       // If no search match, display an error.
       if (hits.length === 0) {
